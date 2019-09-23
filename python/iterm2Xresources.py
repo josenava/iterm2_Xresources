@@ -60,7 +60,10 @@ def write_xresource_colors_to_file(file_path: str, xresources_colors: Dict[str, 
 
 
 if __name__ == "__main__":
-    arg_parser = argparse.ArgumentParser(prog="iter2Xresources.py", usage="%(prog)s [options]", description="Converts iterm2 colors to Xresources")
+    arg_parser = argparse.ArgumentParser(
+        prog="iter2Xresources.py",
+        usage="%(prog)s [options]",
+        description="Converts iterm2 colors to Xresources")
     arg_parser.add_argument("--from", dest="file_path", help="Xml file containing iterm2 colors")
     arg_parser.add_argument("--to", dest="output_file_path", help="output file to store the conversion")
 
